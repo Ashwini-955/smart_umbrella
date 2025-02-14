@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Umbrella Dashboard</title>
+  <link rel="stylesheet" href="styles1.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>☔Smart Umbrella Dashboard☔</h1>
+    </div>
+  </header>
+  <main class="container">
+    <section id="updates" class="card fade-in">
+      <h2>📍Live Updates</h2>
+      <div class="update-item"><i class="fas fa-map-marker-alt"></i> <p id="location">Location: Loading...</p></div>
+      <div class="update-item"><i class="fas fa-tint"></i> <p id="humidity">Humidity: Loading...</p></div>
+      <div class="update-item"><i class="fas fa-thermometer-half"></i> <p id="temperature">Temperature: Loading...</p></div>
+      <div class="update-item"><i class="fas fa-umbrella"></i> <p id="status">Status: Loading...</p></div>
+    </section>
+    <section id="controls" class="card fade-in">
+      <h2>⚙️Controls</h2>
+      <button onclick="refreshData()" class="btn"><i class="fas fa-sync-alt"></i> Refresh Data</button>
+      <button onclick="locateUmbrella()" class="btn"><i class="fas fa-map-marked-alt"></i> Find My Umbrella</button>
+      <p class="find-umbrella-text">If you've misplaced your umbrella, use this feature to locate it instantly.The system will fetch the last known GPS location and guide you with a map 🗺️ to find it.</p>
+      <p class="find-umbrella-text">Stay worry-free, even on rainy days🌧️! Ensure your umbrella is always within reach whenever you need it! </p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Smart Umbrella Project</p>
+    <p>All Rights reserved by @Ashwini Marathe @Kartik Kumbhar @Raunak Mishra</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
